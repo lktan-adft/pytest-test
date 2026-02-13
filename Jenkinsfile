@@ -95,7 +95,7 @@ pipeline {
         
         cleanup {
             echo 'Cleaning up...'
-            sh 'rm -rf ${VENV_DIR}'
+            // sh 'rm -rf ${VENV_DIR}'
         }
     }
 }
