@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'pine64' }
     
     environment {
         VENV_DIR = 'venv'
