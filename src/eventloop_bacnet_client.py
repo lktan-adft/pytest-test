@@ -140,7 +140,6 @@ class EventLoopBACnetClient:
                 
                 # Disconnect BAC0
                 self.bacnet.disconnect()
-                time.sleep(1)  # Wait for port to release
                 self.bacnet = None
                 
                 logger.info("Disconnected from BACnet")

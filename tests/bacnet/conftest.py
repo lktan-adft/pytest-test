@@ -54,7 +54,7 @@ def bacnet_config():
     return config
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="session")
 def bacnet_client(bacnet_config):
     """
     Create and connect a BACnet client for testing
