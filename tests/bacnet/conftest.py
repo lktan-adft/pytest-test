@@ -5,7 +5,8 @@ import os
 import logging
 import pytest
 from dotenv import load_dotenv
-from src.bacnet_client import BACnetClient
+# from src.bacnet_client import BACnetClient
+from src.eventloop_bacnet_client import EventLoopBACnetClient as BACnetClient
 
 # Load environment variables
 load_dotenv()
